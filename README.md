@@ -49,5 +49,8 @@ The project adheres to strict Unity asset management protocols, ensuring a modul
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/[YOUR_GITHUB]/3D_EndlessRunner.git
-```
+   git clone https://github.com/ClxpI/3D_EndlessRunner.git
+   ```
+2. Open the folder as a project in Unity Hub (Unity 6, or the version reported in `ProjectSettings/ProjectVersion.txt`).
+3. Open the scene under `Assets/Scenes` and press Play.
+
