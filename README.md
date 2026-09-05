@@ -1,43 +1,53 @@
-# 3D_EndlessRunner
+# 3D Endless Runner Engine
 
-This is a Unity 3D Endless Runner game built using **C#**. The game showcases how to implement essential game mechanics, including player movement, obstacle spawning, and score tracking, all in a 3D environment.
+[![Engine: Unity](https://img.shields.io/badge/Unity-100000?style=flat&logo=unity&logoColor=white)](#)
+[![Language: C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-## What I Learned
+> **Executive Summary:** A fast-paced, 3D endless runner game engineered in Unity using C#. This project demonstrates core game development mechanics, including physics-based player controllers, dynamic procedural obstacle generation, and real-time UI score tracking within a 3D environment.
 
-- **Programming Skills**:
-  - Gained hands-on experience with Unity's scripting in C#.
-  - Learned to handle **player movement** using Unity's physics and input system.
-  - Implemented **obstacle spawning** at random intervals to create an endless challenge for the player.
-  - Managed **score tracking** and displayed it in the game UI using Unity’s UI system.
-- **Creating Assets and Materials**: Learned to create 3D assets in Unity, including materials, textures, and lighting to improve the game’s appearance and feel.
-- **Gameplay Design**: Designed an engaging and challenging gameplay loop with obstacles and player progression.
+## 🎮 Gameplay Demonstration
 
-## How to Access the Game Code
-
-To explore the game's code, navigate to the `Assets` folder. Here are some key scripts to check out:
-
-- **CameraFollow.cs**: Handles the camera's movement and follows the player character as they run.
-- **ObstacleSpawner.cs**: Spawns obstacles at random positions, creating a dynamic gameplay experience.
-- **PlayerMovement.cs**: Controls the player’s movement mechanics.
-- **ScoreManager.cs**: Tracks and displays the player’s score as they progress in the game.
-
-## Screenshots and Video
-
-Here is a screenshot of the Unity Hierarchy:
-
-![hierarchy_screenshot](https://github.com/user-attachments/assets/a8d9ed0a-681c-4832-81ae-0db6fb4fc3eb)
-
-You can also watch a gameplay video of the 3D Endless Runner game directly here:
-
+Watch the gameplay in action here:  
 https://github.com/user-attachments/assets/4d0fee50-a8d7-4927-a7c8-cd18b9e8955b
 
+---
 
-## Future Plans
+## 💻 Tech Stack & Architecture
 
-In the future, I plan to enhance the game by adding exciting new features:
+*   **Game Engine:** Unity 3D
+*   **Scripting Language:** C# (Object-Oriented Programming)
+*   **Core Systems:** Unity Physics (Rigidbody), Input System, Unity UI (TextMeshPro)
 
-- **In-Game Currency**: Introduce a currency system that rewards players for running a longer distance.
-- **Shop for Skins**: Allow players to use the currency to purchase character skins.
-- **Improved Obstacles and Power-ups**: Add variety to obstacles and introduce power-ups for the player to collect.
-- **Better Graphics**: Enhance the game visuals with new assets, textures, and lighting effects.
+### Key Engineering Concepts Applied
 
+*   **Dynamic Procedural Generation:** Implemented `ObstacleSpawner.cs` to handle the instantiation of obstacles at randomized intervals and vector positions, creating a continuous and unpredictable gameplay loop.
+*   **Physics-Based Movement Controller:** Engineered `PlayerMovement.cs` to leverage Unity's physics engine, handling rigid body forces, collision detection, and responsive input handling for fluid player traversal.
+*   **Camera Tracking Logic:** Developed `CameraFollow.cs` using LateUpdate mechanics to ensure smooth, jitter-free tracking of the player entity across the z-axis.
+*   **Game State & UI Management:** Built a decoupled `ScoreManager.cs` to track player progression and interface directly with Unity's UI canvas system for real-time visual updates.
+
+---
+
+## 📂 Repository Structure & Asset Architecture
+
+The project adheres to strict Unity asset management protocols, ensuring a modular and highly maintainable codebase.
+
+*   `Assets/Scripts/`: Contains the core C# logic driving the game engine.
+*   `Assets/Prefabs/`: Contains pre-configured, instantiated game objects (Player, Obstacles).
+*   `Assets/Materials/`: Contains custom rendering materials (e.g., Neon properties) defining the game's aesthetic.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+*   Unity Editor (Ensure you have a compatible version installed via Unity Hub)
+*   Git
+
+### Installation & Execution
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/[YOUR_GITHUB]/3D_EndlessRunner.git
+```
